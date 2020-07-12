@@ -1,0 +1,102 @@
+$background: #020911;
+$bg-haze: #05182c;
+$deep-blue: #115195;
+$blue: #2573b4;
+$aqua: #2699a2;
+$green: #4bb29e;
+$light-green: #b0d893;
+$sand: #ddd3c6;
+$fact: #4bd944;
+
+@import './styles/transitions';
+@import './styles/animations';
+
+:root {
+  --background: #{$background};
+  --bg-haze: #{$bg-haze};
+  --deep-blue: #{$deep-blue};
+  --blue: #{$blue};
+  --aqua: #{$aqua};
+  --green: #{$green};
+  --light-green: #{$light-green};
+  --sand: #{$sand};
+  --fact: #{$fact};
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Exo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: $sand;
+  background-color: $background;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 2.15vh;
+}
+
+a {
+  font-weight: bold;
+  text-decoration-skip-ink: auto;
+  color: $sand;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1.15em;
+}
+
+p {
+  text-shadow: 0 0 6px #000;
+}
+
+#three canvas {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+// Dat GUI
+.dg.ac {
+  z-index: 1500 !important;
+}
+
+.fa-spin {
+  animation: fa-spin 2s infinite linear;
+}
+
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
