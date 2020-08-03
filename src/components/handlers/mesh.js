@@ -26,12 +26,12 @@ const CRUST_RADIUS = 1.995;
 const textureLoader = new TextureLoader();
 
 const textures = {
-  core: textureLoader.load('/assets/textures/core/core-section.png'),
+  core: textureLoader.load(`${process.env.PUBLIC_URL}/assets/textures/core/core-section.png`),
 };
 
 const sprites = {
-  info: textureLoader.load('/assets/sprites/info-sprite-45f-7x7-2048.png'),
-  globe: textureLoader.load('/assets/sprites/globe-sprite-45f-7x7-2048.png'),
+  info: textureLoader.load(`${process.env.PUBLIC_URL}/assets/sprites/info-sprite-45f-7x7-2048.png`),
+  globe: textureLoader.load(`${process.env.PUBLIC_URL}/assets/sprites/globe-sprite-45f-7x7-2048.png`),
 };
 
 const MeshHandler = {
