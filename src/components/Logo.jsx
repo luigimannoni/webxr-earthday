@@ -28,7 +28,7 @@ export default class Logo extends Component {
 
     return (
       <>
-        {inline ? <Inline src="/assets/images/logo-inline.png" alt="AR Earth Day 2020" /> : <Image src="/assets/images/logo.png" alt="AR Earth Day 2020" />}
+        {inline ? <Inline src={`${process.env.PUBLIC_URL}/assets/images/logo-inline.png`} alt="AR Earth Day 2020" /> : <Image src={`${process.env.PUBLIC_URL}/assets/images/logo.png`} alt="AR Earth Day 2020" />}
       </>
     );
   }
