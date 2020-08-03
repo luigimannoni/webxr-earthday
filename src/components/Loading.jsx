@@ -79,18 +79,18 @@ const Loading = (props) => {
         >
           <img
             alt="Powered by ThreeJS"
-            src="/assets/images/threejs.svg"
+            src={`${process.env.PUBLIC_URL}/assets/images/threejs.svg`}
           />
         </a>
 
         <a
           rel="nofollow noopener noreferrer"
           target="_blank"
-          href="https://threejs.org"
+          href="https://immersive-web.github.io/webxr-samples/"
         >
           <img
             alt="Powered by WebXR"
-            src="/assets/images/webxr-logo.svg"
+            src={`${process.env.PUBLIC_URL}/assets/images/webxr-logo.svg`}
           />
         </a>
       </MiddleContainer>
