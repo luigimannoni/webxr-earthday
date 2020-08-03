@@ -1,9 +1,9 @@
 {
-  "name": "eyekandy-earthday",
+  "name": "earthday-webxr",
   "version": "1.0.0",
   "private": true,
-  "license": "Copyright (c) 2020 Eyekandy Ltd",
-  "homepage": "https://earthday.deimosindustries.com/",
+  "license": "MIT",
+  "homepage": ".",
   "dependencies": {
     "@hot-loader/react-dom": "^16.13.0",
     "@reduxjs/toolkit": "^1.2.5",
