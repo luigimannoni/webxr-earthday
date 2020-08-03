@@ -38,7 +38,9 @@
   "scripts": {
     "dev": "HTTPS=true react-app-rewired start",
     "start": "node server.js",
-    "build": "react-app-rewired build"
+    "build": "react-app-rewired build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -62,6 +64,7 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
+    "gh-pages": "^3.1.0",
     "node-sass": "^4.13.1",
     "redux-devtools": "^3.5.0",
     "redux-devtools-extension": "^2.13.8",

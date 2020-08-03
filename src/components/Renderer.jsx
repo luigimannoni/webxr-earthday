@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import {
   AudioLoader,
 } from 'three';
-import { isBrowser } from 'react-device-detect';
 import ReactGA from 'react-ga';
-import styled from 'styled-components';
 
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
@@ -13,22 +11,6 @@ import GlobeHome from './GlobeHome';
 import GlobeAR from './GlobeAR';
 import Loading from './Loading';
 import Interface from './Interface';
-import Logo from './Logo';
-
-const LogoContainer = styled.div`
-  z-index: 1000;
-  position: fixed;
-  max-width: 640px;
-  width: auto;
-  top: 0;
-  right: 0;
-  padding: 4rem;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: auto;
-`;
 
 export default class Home extends Component {
   constructor() {
@@ -37,9 +19,7 @@ export default class Home extends Component {
       loading: true,
       compatible: true,
       model: null,
-      biomes: null,
       playing: false,
-      error: false,
       session: null,
     };
 
@@ -88,7 +68,6 @@ export default class Home extends Component {
         console.log(err);
         this.setState({
           loading: false,
-          error: true,
         });
       };
 
@@ -230,11 +209,9 @@ export default class Home extends Component {
   render() {
     const {
       model,
-      biomes,
       loading,
       playing,
       compatible,
-      error,
       session,
     } = this.state;
 

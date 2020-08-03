@@ -25,14 +25,6 @@ import {
 
 import Palette from '../libs/Palette';
 
-const BLOOM = {
-  ANIMATE: false,
-  EXP: 1,
-  STR: 0.3,
-  THRES: 0,
-  RAD: 0.05,
-};
-
 PlaneBufferGeometry.prototype.toGrid = function toGrid() {
   const segmentsX = this.parameters.widthSegments || 1;
   const segmentsY = this.parameters.heightSegments || 1;
