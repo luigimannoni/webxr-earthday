@@ -1,5 +1,6 @@
 # WebXR Earth Day
 
+[![Build Status](https://travis-ci.org/luigimannoni/webxr-earthday.svg?branch=master)](https://travis-ci.org/luigimannoni/webxr-earthday)
 
 
 ## 
