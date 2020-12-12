@@ -9,12 +9,7 @@ import './App.scss';
 
 class App extends Component {
   render() {
-    ReactGA.initialize([
-      {
-        trackingId: 'UA-172483840-2',
-        gaOptions: { name: 'internal' },
-      },
-    ]);
+    ReactGA.initialize('UA-172483840-2');
 
     return (
       <div className="App">
