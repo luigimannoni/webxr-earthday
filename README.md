@@ -1,7 +1,7 @@
 # WebXR Earth Day
 [![Build Status](https://travis-ci.org/luigimannoni/webxr-earthday.svg?branch=master)](https://travis-ci.org/luigimannoni/webxr-earthday)
 
-![WebXR Earth Day Demo](https://i.imgur.com/YAbXhPo.gif)
+![WebXR Earth Day Demo](https://i.imgur.com/irsq604.gif)
 
 ## [Demo here](https://luigimannoni.github.io/webxr-earthday)
 
