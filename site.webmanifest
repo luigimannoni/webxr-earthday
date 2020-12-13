@@ -1,0 +1,21 @@
+{
+    "name": "Earth Day AR 2020",
+    "short_name": "Earth Day AR 2020",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#05182c",
+    "background_color": "#05182c",
+    "start_url": "https://earthday.deimosindustries.com",
+    "display": "standalone",
+    "orientation": "portrait"
+}
