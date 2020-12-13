@@ -1,7 +1,11 @@
 # WebXR Earth Day
 [![Build Status](https://travis-ci.org/luigimannoni/webxr-earthday.svg?branch=master)](https://travis-ci.org/luigimannoni/webxr-earthday)
 
+![WebXR Earth Day Demo](https://i.imgur.com/YAbXhPo.gif)
+
 ## [Demo here](https://luigimannoni.github.io/webxr-earthday)
+
+## What's this?
 
 This repo contains a (rather quick and ugly) refactor in pure WebXR of one of my previous projects, *Earth Day AR 2020* which originally ran through 8thwall's SLAM library.
 
