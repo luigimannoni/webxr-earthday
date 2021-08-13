@@ -56,22 +56,22 @@ const legend = [
   {
     icon: 'info',
     title: 'Point of interest',
-    description: 'Tap on the pulsating icon to explore more',
+    description: 'Tap on the pulsating icon to explore more.',
   },
-  {
-    icon: 'camera',
-    title: 'Camera mode',
-    description: 'Take a picture and share with your friends',
-  },
-  {
-    icon: 'globe',
-    title: 'Cross-Section',
-    description: 'Explore the Earth\'s inner core with this tool',
-  },
+  // {
+  //   icon: 'camera',
+  //   title: 'Camera mode',
+  //   description: 'Take a picture and share with your friends.',
+  // },
+  // {
+  //   icon: 'globe',
+  //   title: 'Cross-Section',
+  //   description: 'Explore the Earth\'s inner core with this tool.',
+  // },
   {
     icon: 'reset',
     title: 'Replace Earth',
-    description: 'If you moved too far away you can reposition the planet by pressing this button',
+    description: 'If you moved too far away you can reposition the planet by pressing this button.',
   },
 ];
 

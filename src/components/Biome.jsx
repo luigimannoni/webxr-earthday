@@ -23,11 +23,11 @@ const Slider = styled.div`
   padding: 1rem;
   justify-content: flex-end;
   align-items: flex-start;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.8) 100%);  
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.8) 100%);
   pointer-events: auto;
 
   h1, h2, h4 {
-    margin: 0;        
+    margin: 0;
   }
 `;
 
@@ -45,7 +45,7 @@ const MainDescription = styled.h4`
     margin-right: 0.35rem;
     font-size: 0.95em;
     padding: 0.4em;
-  }  
+  }
 `;
 
 const List = styled.div`
@@ -83,7 +83,7 @@ const BIOMES = {
   Ocean: {
     interactive: true,
     title: 'Atlantic Ocean',
-    subtitle: 'Ocean Fun Facts:',
+    subtitle: 'Ocean Facts:',
     description: 'The largest and most diverse biome in the world is largely affected by trash buildup. Make sure you are taking steps to recycle your waste!',
     facts: [
       {
@@ -99,7 +99,7 @@ const BIOMES = {
   TropicalRainforest: {
     interactive: true,
     title: 'The Amazon Forest',
-    subtitle: 'Tropical Rainforest Fun Facts:',
+    subtitle: 'Tropical Rainforest Facts:',
     description: 'Tropical rainforests are important because they provide oxygen, take in carbon dioxide, and are a huge source of biodiversity and cultural diversity. Be conscious of the amount of paper you use each day to help reduce the levels of deforestation!',
     facts: [
 
@@ -116,7 +116,7 @@ const BIOMES = {
   TemperateRainforest: {
     interactive: true,
     title: 'US National Forests',
-    subtitle: 'Temperate Rainforest Fun Facts:',
+    subtitle: 'Temperate Rainforest Facts:',
     description: 'Characterized by vast amounts of rainforests and cooler temperatures than Tropical Rainforests. These forests and others have been receding from deforestation, get your friends and family together and go plant trees to help grow the forests back!',
     facts: [
       {
@@ -132,7 +132,7 @@ const BIOMES = {
   Freshwater: {
     interactive: true,
     title: 'The Nile',
-    subtitle: 'Freshwater Fun Facts:',
+    subtitle: 'Freshwater Facts:',
     description: 'This biome consists of lakes, ponds, streams and rivers that have less than 1% of salt content. Make sure you use safe green approved pesticides and fertilizer in your gardens to help stop dangerous runoff!',
     facts: [
       {
@@ -148,7 +148,7 @@ const BIOMES = {
   Chaparral: {
     interactive: true,
     title: 'Southern California',
-    subtitle: 'Chaparral Fun Facts:',
+    subtitle: 'Chaparral Facts:',
     description: 'Chaparral biomes help protect the dry land from eroding from wind and rain. One way to protect this biome is to take extra steps to make sure you are safe from starting a fire as these areas are prone to wildfires.',
     facts: [
       {
@@ -239,7 +239,7 @@ class Biome extends Component {
           </MainTitle>
           <MainDescription>
             {!show ? <Button icon="tap" /> : null}
-            {!show ? <span>Tap here to show some fun facts</span> : b.subtitle}
+            {!show ? <span>Tap here to show some facts</span> : b.subtitle}
           </MainDescription>
           {
             b.facts.map((fact, index) => {

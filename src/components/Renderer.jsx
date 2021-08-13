@@ -93,8 +93,6 @@ export default class Home extends Component {
       const audioBuffers = {};
 
       loader.load(files.globe, (globeglb) => {
-        console.log(globeglb);
-
         // Extrapolate object group
         ReactGA.event({
           category: 'loaders',

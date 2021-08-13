@@ -59,7 +59,7 @@ const BottomFade = styled.div`
   bottom: 0;
   ${baseStyles}
   z-index: 1000;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);  
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
   height: 5rem;
   pointer-events: none;
 `;
@@ -67,7 +67,7 @@ const BottomFade = styled.div`
 const STRINGS = {
   CAMERA_ACCESS_REQUIRED: 'To continue with the AR experience we need to access to your camera',
   CAMERA_ACCESS_DENIED: 'We can\'t offer an AR experience without camera permissions',
-  SCAN_FLOOR: 'Move your phone to scan a flat surface',
+  SCAN_FLOOR: 'Move your phone to scan a well lit and flat surface',
   PLACE_GLOBE: 'Tap on the screen to spawn the 3D earth',
   INSTRUCTIONS_SWIPE: (
     <>
