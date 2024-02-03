@@ -101,12 +101,11 @@ const Loading = (props) => {
         {(!load && !compatible) && (
           <>
             <p>
-              WebXR is either not supported or not enabled on your browser,
-              please make sure you&apos;re running at least Chrome 81 on an AR-compliant device
+              The WebXR feature is not supported on your browser or device, for example iOS device.
             </p>
             <p>
-              Alternatively enable the following two Chrome flags (chrome://flags):
-              WebXRDevice API (#webxr) and WebXR Hit Test (#webxr-hit-test)
+              Make sure you&apos;re running at least Chrome 81 on an AR-compliant device (Android)
+              or the Apple Vision Pro virtual reality headset.
             </p>
           </>
         )}

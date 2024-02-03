@@ -65,7 +65,8 @@ export default class Home extends Component {
       const loader = new GLTFLoader();
       const loaderError = (err) => {
         // eslint-disable-next-line no-console
-        console.log(err);
+        window.console.warn(err);
+
         this.setState({
           loading: false,
         });
@@ -192,6 +193,7 @@ export default class Home extends Component {
     };
 
     window.onload = () => {
+      // eslint-disable-next-line no-console
       if (typeof navigator.xr !== 'undefined' && navigator.xr.isSessionSupported) {
         navigator.xr.isSessionSupported('immersive-ar').then((supported) => {
           if (supported) {
@@ -200,6 +202,8 @@ export default class Home extends Component {
             notCompatible('XR exists but immersive AR is not supported');
           }
         }).catch(notCompatible);
+      } else {
+        notCompatible('XR does not exist');
       }
     };
   }
